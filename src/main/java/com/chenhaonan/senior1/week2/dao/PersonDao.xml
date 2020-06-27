@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chenhaonan.senior1.week2.dao.PersonDao">
+	<insert id="insert">
+	<!-- 添加 -->
+		insert into person (id,name,birthday,score,address) values(null,#{name},#{birthday},#{score},#{address})
+	</insert>
+	<select id="selects" resultType="Person">
+	<!-- 查询 -->
+		select * from person
+	</select>
+</mapper>
